@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" media="screen and (max-width: 412px)" />
+    <title>Comptabilité</title>
+  </head>
+  <body>
+    <section>
+      <form action="" id="form">
+        <label for="Nom">son Nom : </label><br />
+        <input type="text" id="Nom" /> <br />
+        <label for="marke">Sa Marque : </label><br />
+        <input type="text" list="mark" id="marke" /> <br />
+        <datalist id="mark">
+          <option value="Louis Vuitton"></option>
+          <option value="Dior"></option>
+          <option value="Chanel"></option>
+          <option value="FILLA"></option>
+        </datalist>
+
+        <label for="dat">Son prix : </label><br />
+        <input type="number" id="prix" /> <br />
+        <label for="dat">Sa date de production</label><br />
+        <input type="date" id="dat" /> <br />
+        <select name="typ" id="types">
+          <option value="0">Son type</option>
+          <option value="hygiène et toilette">hygiène et toilette</option>
+          <option value=" soins esthétiques">soins esthétiques</option>
+          <option value="produits solaires">produits solaires</option>
+          <option value="beauté des mains et des pieds">
+            beauté des mains et des pieds
+          </option>
+          <option value=" produits de maquillage">
+            produits de maquillage
+          </option>
+          <option value="entretien capillaires">entretien capillaires</option>
+          <option value="parfums">parfums</option></select
+        ><br />
+        <label>Est en promotion : </label><br />
+        <input type="radio" name="color" id="Oui" value="Oui" /><label for="Oui"
+          >Oui</label
+        >
+        <input type="radio" name="color" id="non" value="non" /><label for="non"
+          >Non</label
+        >
+        <br />
+        <input type="button" value="Ajouter" id="btn" />
+      </form>
+      <div>
+        <table id="tbl">
+        </table>
+        <input type="button" id="sup" value="suprimer tout" />
+      <!-- </div>
+      <div id="not">
+        <p id="afficher"></p>
+      </div> -->
+    </section>
+    <script src="program.js"></script>
+  </body>
+</html>
